@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book - Canon Events</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="p-6 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">Canon Events</h1>
+    <nav class="space-x-6">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="book.html">Book</a>
+    </nav>
+  </header>
+  <section class="p-10 max-w-2xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Book Your Event</h2>
+    <form name="booking" method="POST" data-netlify="true" class="space-y-4">
+      <input type="hidden" name="form-name" value="booking">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full border p-2 rounded" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full border p-2 rounded" />
+      <input type="text" name="event_type" placeholder="Event Type" class="w-full border p-2 rounded" />
+      <textarea name="details" placeholder="Event Details" rows="5" class="w-full border p-2 rounded"></textarea>
+      <button type="submit" class="bg-black text-white px-4 py-2 rounded">Submit</button>
+    </form>
+  </section>
+  <footer class="text-center p-4 mt-10 border-t text-sm">
+    © 2025 Canon Events. All rights reserved.
+  </footer>
+</body>
+</html>
